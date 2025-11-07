@@ -2,7 +2,7 @@
 a = input()
 n = int(a)
 
-
+#재귀적으로 몫이 0이 될때까지 나누기
 def to_hex16(n):
   digits = "0123456789abcdef"
   if (n == 0):
