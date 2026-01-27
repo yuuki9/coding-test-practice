@@ -1,0 +1,51 @@
+토끼와 거북이 (Fast & Slow Pointers)
+오늘의 문제는 연결 리스트(Linked List)라는 자료구조에서 포인터의 '속도 차이'를 이용하는 아주 기발한 알고리즘입니다.
+
+[문제] 연결 리스트의 중간 노드 찾기 (Middle of the Linked List)
+단방향 연결 리스트의 시작 노드인 head가 주어집니다. 리스트의 정중앙에 위치한 노드를 반환하는 함수를 작성하세요.
+
+조건:
+
+만약 노드가 짝수 개라 중간이 두 개라면, 두 번째 중간 노드를 반환합니다.
+
+전체 길이를 미리 구하기 위해 리스트를 두 번 훑지 말고, 단 한 번의 순회로 해결해 보세요.
+
+예시:
+
+입력: [1, 2, 3, 4, 5] → 출력: 노드 3
+
+입력: [1, 2, 3, 4, 5, 6] → 출력: 노드 4
+
+💡 손코딩 전 생각할 점 (Hint)
+두 개의 손가락(포인터): slow와 fast라는 이름의 두 포인터를 준비합니다. 둘 다 처음에 head에서 시작합니다.
+
+속도 차이:
+
+slow는 한 번에 한 칸씩 이동합니다. (slow = slow.next)
+
+fast는 한 번에 두 칸씩 이동합니다. (fast = fast.next.next)
+
+종료 시점: 토끼(fast)가 리스트의 끝에 도달하거나, 리스트를 벗어나는 순간 멈춥니다. 이때 느릿느릿 걸어온 거북이(slow)는 어디에 있을까요?
+
+📝 Java 코드 뼈대
+연결 리스트 노드는 보통 다음과 같이 정의되어 있다고 가정합니다.
+
+Java
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int val) { this.val = val; }
+}
+
+public class Solution {
+    public ListNode middleNode(ListNode head) {
+        // 1. slow와 fast 포인터를 선언하고 head로 초기화하세요.
+        
+        // 2. fast가 끝에 도달할 때까지 while 문을 돌리세요.
+        // (힌트: fast가 null이 아니고, fast.next도 null이 아닐 동안!)
+        
+        // 3. slow는 한 칸, fast는 두 칸 전진!
+        
+        // 4. 마지막에 slow를 반환하면 그것이 중간 노드입니다.
+    }
+}
