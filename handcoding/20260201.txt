@@ -1,0 +1,32 @@
+[Day 3] Best Time to Buy and Sell Stock (주식을 사고 팔기 가장 좋은 시점)
+문제 설명
+당신에게 일별 주식 가격이 담긴 배열 prices가 주어집니다. prices[i]는 i번째 날의 주식 가격입니다.
+
+당신은 **한 번의 매수(Buy)**와 **한 번의 매도(Sell)**를 통해 최대 수익을 내려고 합니다. (단, 매수는 반드시 매도보다 앞서야 합니다.)
+
+얻을 수 있는 **최대 이익(Maximum Profit)**을 반환하는 함수를 작성하세요. 만약 이익을 낼 수 없다면 0을 반환하세요.
+
+입출력 예시
+Example 1:
+
+Input: prices = [7, 1, 5, 3, 6, 4]
+
+Output: 5
+
+Explanation: 2일차(가격 1)에 샀다가 5일차(가격 6)에 팔면 이익은 6 - 1 = 5입니다. (7일 때 사서 1일 때 파는 건 불가능합니다.)
+
+Example 2:
+
+Input: prices = [7, 6, 4, 3, 1]
+
+Output: 0
+
+Explanation: 가격이 계속 떨어지므로 거래를 하면 손해를 봅니다. 따라서 이익은 0입니다.
+
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        // 여기에 코드를 작성하세요.
+        
+    }
+}
