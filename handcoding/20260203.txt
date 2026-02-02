@@ -1,0 +1,33 @@
+Longest Substring Without Repeating Characters (중복 문자가 없는 가장 긴 부분 문자열)
+문제 설명
+문자열 s가 주어졌을 때, 문자가 중복되지 않는 가장 긴 **부분 문자열(substring)**의 길이를 구하세요.
+
+조건
+시간 복잡도: $O(n)$으로 해결해야 합니다.
+
+공간 복잡도: 문자를 저장할 해시 셋(Set)이나 맵(Map)을 사용할 수 있습니다.
+
+입출력 예시
+Example 1:
+
+Input: s = "abcabcbb"
+
+Output: 3
+
+설명: 답은 "abc"이며, 길이는 3입니다.
+
+Example 2:
+
+Input: s = "bbbbb"
+
+Output: 1
+
+설명: 답은 "b"이며, 길이는 1입니다.
+
+Example 3:
+
+Input: s = "pwwkew"
+
+Output: 3
+
+설명: 답은 "wke"이며, 길이는 3입니다. (주의: "pwke"는 부분 수열(subsequence)이지 부분 문자열(substring)이 아닙니다.)
